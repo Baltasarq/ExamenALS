@@ -21,7 +21,7 @@ def create_notes_file():
             f = open(notes_filename, "wt")
             f.write("\nDNI: " + str(dni))
             f.write("\nApellidos: " + str(apellidos))
-            f.write("\nNombre: " + str(dni))
+            f.write("\nNombre: " + str(nombre))
             f.write("\nEmail: " + str(email))
             f.write("\nDate: " + str(datetime.datetime.now()))
             f.write("\n")
