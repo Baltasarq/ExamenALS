@@ -48,3 +48,6 @@ if __name__ == "__main__":
     ejercicio3.main()
     ejercicio4.main()
     ejercicio5.main()
+    
+    if not dni:
+        print("\n** Recuerda modificar tus datos en main.py **\n")
