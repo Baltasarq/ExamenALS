@@ -38,10 +38,10 @@ def create_notes_file():
 
 if __name__ == "__main__":
     create_notes_file()
-    print("DNI:", "n/a" if dni else str(dni))
-    print("Apellidos:", "n/a" if apellidos else str(apellidos))
-    print("Nombre:", "n/a" if nombre else str(nombre))
-    print("Email:", "n/a" if email else str(email))
+    print("DNI:", "n/a" if not dni else str(dni))
+    print("Apellidos:", "n/a" if not apellidos else str(apellidos))
+    print("Nombre:", "n/a" if not nombre else str(nombre))
+    print("Email:", "n/a" if not email else str(email))
     print()
     ejercicio1.main()
     ejercicio2.main()
