@@ -18,22 +18,21 @@ email = None
 def create_notes_file():
     if dni:
         if not path.isfile(notes_filename):
-            f = open(notes_filename, "wt")
-            f.write("\nDNI: " + str(dni))
-            f.write("\nApellidos: " + str(apellidos))
-            f.write("\nNombre: " + str(nombre))
-            f.write("\nEmail: " + str(email))
-            f.write("\nDate: " + str(datetime.datetime.now()))
-            f.write("\n")
-            f.write("\nEjercicio 1: ")
-            f.write("\nEjercicio 2: ")
-            f.write("\nEjercicio 3: ")
-            f.write("\nEjercicio 4: ")
-            f.write("\nEjercicio 5: ")
-            f.write("\n")
-            f.write("\nNota:        ")
-            f.write("\n")
-            f.close()
+            with open(notes_filename, "wt") as f:
+                f.write("\nDNI: " + str(dni))
+                f.write("\nApellidos: " + str(apellidos))
+                f.write("\nNombre: " + str(nombre))
+                f.write("\nEmail: " + str(email))
+                f.write("\nDate: " + str(datetime.datetime.now()))
+                f.write("\n")
+                f.write("\nEjercicio 1: ")
+                f.write("\nEjercicio 2: ")
+                f.write("\nEjercicio 3: ")
+                f.write("\nEjercicio 4: ")
+                f.write("\nEjercicio 5: ")
+                f.write("\n")
+                f.write("\nNota:        ")
+                f.write("\n")
 
 
 if __name__ == "__main__":
