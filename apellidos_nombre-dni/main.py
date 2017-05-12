@@ -2,11 +2,6 @@
 from os import path
 import datetime
 
-import ejercicio1
-import ejercicio2
-import ejercicio3
-import ejercicio4
-import ejercicio5
 
 notes_filename = "notas.txt"
 
@@ -37,15 +32,26 @@ def create_notes_file():
 
 if __name__ == "__main__":
     create_notes_file()
+
     print("DNI:", "n/a" if not dni else str(dni))
     print("Apellidos:", "n/a" if not apellidos else str(apellidos))
     print("Nombre:", "n/a" if not nombre else str(nombre))
     print("Email:", "n/a" if not email else str(email))
     print()
+    
+    import ejercicio1
     ejercicio1.main()
+    
+    import ejercicio2
     ejercicio2.main()
+    
+    import ejercicio3
     ejercicio3.main()
+    
+    import ejercicio4
     ejercicio4.main()
+    
+    import ejercicio5
     ejercicio5.main()
     
     if not dni:
