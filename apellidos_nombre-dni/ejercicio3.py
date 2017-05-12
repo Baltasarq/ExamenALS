@@ -1,4 +1,6 @@
 # Ejercicio 3
+# from ejercicio1 import *
+
 
 def main():
     print("Ejercicio 3\n===========\n\n")
