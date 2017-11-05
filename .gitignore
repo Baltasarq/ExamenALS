@@ -87,3 +87,8 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# Own files
+notas.txt
+usr_exam_data.*
+zip_exam-*
