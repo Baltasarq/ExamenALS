@@ -9,7 +9,7 @@ info_filename = "usr_exam_data.txt"
 
 def retrieve_info_file(usr_data):
     try:
-        with open(info_filename, "rU") as f:
+        with open(info_filename, "r") as f:
             usr_data["dni"] = f.readline().strip()
             usr_data["nombre"] = f.readline().strip()
             usr_data["apellidos"] = f.readline().strip()
