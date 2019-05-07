@@ -7,7 +7,7 @@ Cada ejercicio se resolverá en su archivo independiente: el ejercicio 1 en ejer
 Se pueden ejecutar todos los ejercicios con 'python main.py'
 
 ## Configuración automática (recomendada)
-Ejecuta la herramienta *exam.py* con el parámetro *prep*, y contesta a las preguntas. A continuación, ya puedes abrir  MonoDevelop, o Xamarin/Visual Studio.
+Ejecuta la herramienta *exam.py* con el parámetro *prep*, y contesta a las preguntas. A continuación, ya puedes abrir  cualquier editor de textos, o un IDE (PyCharm, WingIDE...), que permiten varias comodidas extras como autocompletar, comprobación de errores...
 
     $ python3 exam.py prep
 
