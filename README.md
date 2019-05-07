@@ -21,7 +21,11 @@ Si es necesario, es posible recomenzar con la información por defecto:
     $ python3 examp.py ini
 
 ## Configuración manual
-Recuerda, en primer lugar, modificar el nombre del directorio, siguiendo el formato dado, por los datos en minúsculas y usando solo caracteres básicos y dígitos. Por ejemplo:
+Recuerda, en primer lugar, modificar el nombre del directorio con los ejercicios del examen (**no** el directorio padre, *ExamenALS*), siguiendo el siguiente formato (datos en minúsculas y usando solo caracteres básicos y dígitos).
+
+    <apellido1>_<apellido2>_<nombre>-<dni>
+
+Por ejemplo:
 
     palotes_gomez_perico-11222333R
 
@@ -39,9 +43,13 @@ Ejecuta la herramienta *exam.py* con el parámetro *zip*, de forma que se genera
     $ python3 exam.py zip
 
 ## Entrega manual
-Empaqueta el directorio donde se encuentran las preguntas del examen en un archivo zip, y entrégalo. Asegúrate de incorporar todos los archivos.
 
-
-En primer lugar, modifica el nombre del directorio con tu dni, apellidos y nombre. No incluyas caracteres más allá del alfabeto básico. Por ejemplo:
+En primer lugar, tal y como se indica más arriba, modifica el nombre del directorio que contiene las preguntas del examen con tu dni, apellidos y nombre. No incluyas caracteres más allá de los dígitos y el alfabeto básico. Por ejemplo:
 
     palotes_gomez_perico-11222333R
+
+Empaqueta el directorio donde se encuentran las preguntas del examen (**no** el directorio padre, *ExamenALS*) en un archivo zip, y entrégalo. Asegúrate de incorporar todos los archivos.
+
+Si se desea hacer en línea de comandos (¡TAB autocompleta los nombres de archivos!):
+
+    $ zip palotes_gomez_perico-11222333R.zip palotes_gomez_perico-11222333R/*
