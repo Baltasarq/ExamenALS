@@ -6,12 +6,14 @@ Cada ejercicio se resolverá en su archivo independiente: el ejercicio 1 en ejer
 
 Se pueden ejecutar todos los ejercicios con 'python main.py'
 
-## Configuración automática (recomendada)
+## Preparación del examen
+
+### Preparación automática (recomendada)
 Ejecuta la herramienta *exam.py* con el parámetro *prep*, y contesta a las preguntas. A continuación, ya puedes abrir  cualquier editor de textos, o un IDE (PyCharm, WingIDE...), que permiten varias comodidas extras como autocompletar, comprobación de errores...
 
     $ python3 exam.py prep
 
-## Ayudas en la configuración automática
+### Ayudas en la Preparación automática
 En caso de que surja cualquier problema, será posible obtener la información del usuario tal cual está guardada:
 
     $ python3 exam.py info
@@ -20,7 +22,7 @@ Si es necesario, es posible recomenzar con la información por defecto:
 
     $ python3 examp.py ini
 
-## Configuración manual
+### Preparación manual
 Recuerda, en primer lugar, modificar el nombre del directorio con los ejercicios del examen (**no** el directorio padre, *ExamenALS*), siguiendo el siguiente formato (datos en minúsculas y usando solo caracteres básicos y dígitos).
 
     <apellido1>_<apellido2>_<nombre>-<dni>
@@ -37,12 +39,14 @@ Palotes
 perico@palotes.com
 </pre>
 
-## Entrega automatizada (recomendada)
+## Entrega
+
+### Entrega automatizada (recomendada)
 Ejecuta la herramienta *exam.py* con el parámetro *zip*, de forma que se generará un archivo zip ya preparado para la entrega.
 
     $ python3 exam.py zip
 
-## Entrega manual
+### Entrega manual
 
 En primer lugar, tal y como se indica más arriba, modifica el nombre del directorio que contiene las preguntas del examen con tu dni, apellidos y nombre. No incluyas caracteres más allá de los dígitos y el alfabeto básico. Por ejemplo:
 
