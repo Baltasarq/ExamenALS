@@ -13,13 +13,12 @@ import unicodedata
 
 AppInfo = {
     "name": "exam",
-    "version": "v0.4 20211215"
+    "version": "v0.4 20211220"
 }
 
 DataFile = "usr_exam_data.json"
 MarksFile = "notas.txt"
 InfoFile = "usr_exam_data.txt"
-ZipFileNamePrefix = "zip_exam-"
 
 ExcludedFilesByExtension = [
     ".ini", ".db",                                          # Windows
@@ -268,7 +267,7 @@ def retrieve_data_file(file_name: str):
 
 
 def pak_zip(user_data, output_path):
-    file_name = ZipFileNamePrefix + user_data.full_dni() + ".zip"
+    file_name = user_data.folder_name + ".zip"
     file_name = pathlib.Path(output_path) / file_name
     input_path = "."
 
