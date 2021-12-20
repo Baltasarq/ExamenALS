@@ -7,6 +7,7 @@ import json
 import pathlib
 import zipfile
 import platform
+import subprocess
 import unicodedata
 
 
@@ -266,13 +267,10 @@ def retrieve_data_file(file_name: str):
         return None
 
 
-def pak_zip(user_data):
-    output_path = retrieve_desktop_dir()
+def pak_zip(user_data, output_path):
     file_name = ZipFileNamePrefix + user_data.full_dni() + ".zip"
     file_name = pathlib.Path(output_path) / file_name
     input_path = "."
-
-    print("Empaquetando examen en archivo zip: " + str(file_name) + "...\n")
 
     with zipfile.ZipFile(file_name, 'w') as zip_handle:
         input_path = input_path.rstrip("\\/")

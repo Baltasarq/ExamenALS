@@ -13,6 +13,14 @@ if __name__ == "__main__":
     print(usr_data)
     print("\n")
 
+    # Dump data files
+    desktop_path = exam_manager.retrieve_desktop_dir()
+
+    exam_manager.create_marks_file(usr_data, exam_manager.MarksFile)
+    exam_manager.create_info_file(usr_data, exam_manager.InfoFile)
+    exam_manager.pak_zip(usr_data, desktop_path)
+    print("Examen comprimido en: " + str(desktop_path) + "...\n")
+
     # Student's exercises
     import ejercicio1
     ejercicio1.main()
@@ -29,7 +37,4 @@ if __name__ == "__main__":
     import ejercicio5
     ejercicio5.main()
 
-    # Dump data files
-    exam_manager.create_marks_file(usr_data, exam_manager.MarksFile)
-    exam_manager.create_info_file(usr_data, exam_manager.InfoFile)
-    exam_manager.pak_zip(usr_data)
+    print("Examen comprimido en: " + str(desktop_path) + "...\n")
