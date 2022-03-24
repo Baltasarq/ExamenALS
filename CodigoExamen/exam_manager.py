@@ -75,7 +75,7 @@ class UserData:
         if email.count('@') != 1:
             raise Exception("e.mail solo tiene que tener una '@'")
 
-        if len(dni) < 8:
+        if len(dni) < 7:
             raise Exception("DNI demasiado corto")
 
         if len(dni_letter) != 1:
@@ -131,7 +131,7 @@ class UserData:
         return json.dumps(self.to_dict())
 
     @staticmethod
-    def decompose_dni(dni: str) -> tuple[str]:
+    def decompose_dni(dni: str) -> "tuple[str,...]":
         """Return DNI decomposed in parts
             :return: A tuple with three elements: prefix, dni, letter
         """
@@ -302,7 +302,7 @@ def retrieve_desktop_dir_for_linux() -> str:
     try:
         toret = subprocess.check_output(["xdg-user-dir", "DESKTOP"]).decode().strip()
     except:
-        toret = pathlib.Path.home()
+        toret = str(pathlib.Path.home())
 
     return toret
 
