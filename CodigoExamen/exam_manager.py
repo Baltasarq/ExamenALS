@@ -16,6 +16,7 @@ AppInfo = {
     "version": "v0.4 20211220"
 }
 
+
 DataFile = "usr_exam_data.json"
 MarksFile = "notas.txt"
 InfoFile = "usr_exam_data.txt"

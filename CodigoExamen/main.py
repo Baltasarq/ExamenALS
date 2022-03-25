@@ -1,5 +1,4 @@
-# charset: utf-8
-# Main
+# Examen ALS (c) 2020-22 Baltasar MIT License <jbgarcia@uvigo.es>
 
 
 import exam_manager
