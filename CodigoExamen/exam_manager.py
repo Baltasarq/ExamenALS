@@ -233,7 +233,7 @@ def ask_user_data(user_data: UserData):
 
 
 def create_marks_file(user_data: UserData, file_name: str):
-    with open(file_name, "wt") as f:
+    with open(file_name, "wt", encoding="utf-8") as f:
         f.write("\n===\n")
         f.write(str.format("DNI: {0}\n", user_data.full_dni()))
         f.write(str.format("Nombre: {0}, {1}\n",
@@ -246,7 +246,7 @@ def create_marks_file(user_data: UserData, file_name: str):
 
 
 def create_info_file(user_data: UserData, file_name: str):
-    with open(file_name, "wt") as f:
+    with open(file_name, "wt", encoding="utf-8") as f:
         f.write(user_data.full_dni() + "\n")
         f.write(user_data.name + "\n")
         f.write(user_data.surname + "\n")
@@ -254,14 +254,14 @@ def create_info_file(user_data: UserData, file_name: str):
 
 
 def create_data_file(user_data: UserData, file_name: str):
-    with open(file_name, "wt") as f:
+    with open(file_name, "wt", encoding="utf-8") as f:
         f.write(user_data.to_json())
         f.write("\n")
 
 
 def retrieve_data_file(file_name: str):
     try:
-        with open(file_name, "rU") as f:
+        with open(file_name, "rU", encoding="utf-8") as f:
             return UserData.from_json(str.join("\n", f.readlines()))
     except OSError or IOError:
         return None
